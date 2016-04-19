@@ -1,8 +1,11 @@
 Also required:
 
 FSL:  http://fsl.fmrib.ox.ac.uk/fsl/fslwiki/
+
 Diffusion Toolkit and TrackVis:  http://trackvis.org
+
 UCLA Multimodal Connectivity Package:  http://ccn.ucla.edu/wiki/index.php/UCLA_Multimodal_Connectivity_Package
+
 Matlab: https://www.mathworks.com/
 
 References:
