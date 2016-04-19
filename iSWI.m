@@ -54,8 +54,8 @@ for j=1:length(subjs)
     PL = charpath(distance_bin(G))/mean(plrand);
     
     %for weighted graphs
-    CC = mean(clustering_coef_wu(G))/mean(ccrand);
-    PL = charpath(distance_wei(G))/mean(plrand);
+    %CC = mean(clustering_coef_wu(G))/mean(ccrand);
+    %PL = charpath(distance_wei(G))/mean(plrand);
     
     SWI = CC/PL;
     
@@ -68,8 +68,8 @@ for j=1:length(subjs)
     swiData(j,5) = mean(efficiency_bin(G,1)); % local efficiency
     
     % for weighted graphs
-    swiData(j,4) = efficiency_wei(G,0); %global efficiency
-    swiData(j,5) = mean(efficiency_wei(G,1)); % local efficiency
+    %swiData(j,4) = efficiency_wei(G,0); %global efficiency
+    %swiData(j,5) = mean(efficiency_wei(G,1)); % local efficiency
     
     swiData(j,6) = size(G,2); % size
 
