@@ -4,7 +4,7 @@
 #This script copies the ROI folder into the subject directory, applies the transformation 
 #to each ROI, removes the original ROIs, creates a path text file for the ROIs, computes
 #number of tracks and track stats for each pair of ROIs and the extracts the volume for
-#each ROI. User input may be needed at lines marked "edit". 
+#each ROI. 
 
 #This script must be inside the STUDY directory.
 
