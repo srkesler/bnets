@@ -2,7 +2,7 @@ Matlab is required for most. Additional requirements are listed in the comments 
 
 DTI_nets/:	Scripts for preprocessing and preparing DTI data for connectome analyses 
 
-minD.m:     Threshold matrices to minimum connection density
+minD.m:     Threshold matrices to minimum connection density (data driven)
 
 iSWI.m:     Compute smallworldness index from individual level connectivity matrices
 
