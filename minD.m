@@ -4,7 +4,7 @@
 
 clear all;
 
-% Threshold connectivity matrices at a common minimum density
+% Threshold connectivity matrices at a common minimum density (data driven)
 % Requires BCT version 2016_01_16 (https://sites.google.com/site/bctnet/)
 
 % Input:  unthresholded connectivity matrices
