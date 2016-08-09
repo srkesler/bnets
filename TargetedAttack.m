@@ -13,7 +13,6 @@ for j = 1:length(subjs)
     load(fullfile(subjs{j,1},'rotcorr_th.mat'));
     % calculate nodal degrees and sort them
     [degs,DI] = sort((degrees_und(rotcorr_th)),'descend');
-    %[degs,DI] = sort(unique((degrees_und(rotcorr_th))),'descend');
     % targeted attack
     G = rotcorr_th; % make a copy of the network
     for i = 1:length(DI)
