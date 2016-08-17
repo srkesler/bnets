@@ -16,7 +16,7 @@ for j = 1:length(subjs)
     % targeted attack
     G = rotcorr_th; % make a copy of the network
     for i = 1:length(DI)
-        G(DI(i),:) = 0; G(:,DI(i)) = 0; % remove the node
+        G(DI(i),:) = 0; G(:,DI(i)) = 0; % remove the node without replacement
         TAgeff(:,i) = efficiency_bin(G,0); % calculate global efficiency after each attack
     end
     TAgeffAUC(j,:) = trapz(1:size(G,2),TAgeff); % compute AUC for each subject
