@@ -8,22 +8,13 @@ export PATH=$PATH.:/Applications/Diffusion\ Toolkit.app/Contents/MacOS
 #This script performs DTI tensor reconstruction and tractography and transforms ROIs 
 #into DTI native space
 
-#STUDY directory contains all subject folders and no other subdirectories. Subject 
-#folders must contain the anatomic volume and eddy current corrected dti volume
+# Check the dti.trk file and define ROIs before moving on to dcon3
 
-#This script must be inside the STUDY directory
-
-# Define ROIs before moving on to dcon3
-
-STUDY='/path/' #path to subject folders
-
-SUBJS=`ls -d */`
-datadir='connectome/' #name of folder containing subject's dti and anatomic data
+SUBJS=$(cat /Volumes/EHD/Study/paths.txt) #edit path to paths file
 
 for subjdir in ${SUBJS}
 do 
-	currentdir=${STUDY}${subjdir}${datadir}
-	cd ${currentdir}
+	cd ${subjdir}
 
 	# Mask the eddy corrected DTI data with the B0 mask
 	fslmaths dti_corr.nii.gz -mas nodif_brain_mask.nii.gz dti_corr_masked
