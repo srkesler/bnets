@@ -1,22 +1,13 @@
 #!/bin/bash
 
 #Shelli Kesler 12/8/14 
+# Check mask files before moving on to dcon2
 
-#This script performs DTI correction and brain masking.  *Check the masks for holes before proceeding to dcon2.
-
-#STUDY directory contains all subject folders and no other subdirectories.
-
-#This script must be inside the STUDY directory
-
-STUDY='/path/' #path to subject folders
-
-SUBJS=`ls -d */`
-datadir='connectome/' #name of folder containing DTI and anatomic data
+SUBJS=$(cat /Volumes/EHD/Study/paths.txt) #edit path to paths file
 
 for subjdir in ${SUBJS}
 do 
-	currentdir=${STUDY}${subjdir}${datadir}
-	cd ${currentdir}
+	cd ${subjdir}
 	
 	#eddy current correction of raw DTI data
 	eddy_correct data.nii.gz dti_corr 0
