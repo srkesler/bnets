@@ -9,17 +9,14 @@ clear all;
 % This script assumes that dcon1, dcon2 and dcon3 have been 
 % completed and that subject folders are located in group specific folders.
 
-% This script must be in the same directory as the txt2mat script
+% This script requires the txt2mat script in the Matlab path
 % http://www.mathworks.com/matlabcentral/fileexchange/18430-txt2mat
 
 % Shelli Kesler 8/28/15
 % Updated to use fslstats ROI volume output
 
 % paths to subject folders
-subjs = {...
-'/path1/'
-'/path2/'
-};
+[subjs] = textread('fullpath/paths.txt','s%');
 
 %path to folder that will contain all FNFA*.mats
 datadir2 = '/path/FNFA/'; 
