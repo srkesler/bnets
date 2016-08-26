@@ -8,6 +8,8 @@ UCLA Multimodal Connectivity Package:  http://ccn.ucla.edu/wiki/index.php/UCLA_M
 
 Matlab: https://www.mathworks.com/
 
+GraphicsMagick: http://www.graphicsmagick.org
+
 References:
 
 Kesler, SR, et al. 2015. Neurobiol Aging, 36, pp. 2429-42.
