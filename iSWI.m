@@ -17,16 +17,11 @@ clear all;
 % start parallel pool if not already running
 isempty(gcp);
 
-% paths to subject data
-subjs = {...
-'/path2subject1/'
-'/path2subject2/'
-'/path2subject3/'
-'/path2subjectn/'
-};
+[dirs] = textread('/Users/skesler/Desktop/tracks/Paths.txt' , '%s');
+% Txt file contains full paths to each subj e.g. /Volumes/STUDY/SUB001
 
-for j=1:length(subjs)
-    cd(subjs{j});
+for j=1:length(dirs)
+    cd(dirs{j});
     load('G.mat') % matrix file name
 
     % Generate random graphs and calculate clustering coefficient and
