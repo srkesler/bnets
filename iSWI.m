@@ -17,7 +17,7 @@ clear all;
 % start parallel pool if not already running
 isempty(gcp);
 
-[dirs] = textread('/Users/skesler/Desktop/tracks/Paths.txt' , '%s');
+[dirs] = textread('/Desktop/Study/Paths.txt' , '%s');
 % Txt file contains full paths to each subj e.g. /Volumes/STUDY/SUB001
 
 for j=1:length(dirs)
