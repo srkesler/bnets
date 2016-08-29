@@ -1,7 +1,7 @@
 % Shelli Kesler 8/20/16
 % Convert FSL bvec files to Diffusion Toolkit format
 
-[dirs] = textread('/Users/skesler/Desktop/tracks/Paths.txt' , '%s');
+[dirs] = textread('/Desktop/tracks/Paths.txt' , '%s');
 % Txt file contains full paths to each subj e.g. /Volumes/STUDY/SUB001
 
 for i = 1:length(dirs)
