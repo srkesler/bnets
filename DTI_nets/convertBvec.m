@@ -9,7 +9,6 @@ for i = 1:length(dirs)
     %5 = no. chars from end of the subj path that represent subj ID
     %starting count from 0, i.e. this selects the last 6 chars:
     bvec = importdata([dirs{i}(end-5:end) '_bvecs'],' ');  
-    fileID = fopen('bvec.txt','w'); %create text file
-    %format data in 3 columns separated by 1 space and a comma with 4 decimals
+    fileID = fopen('bvec.txt','w');
     fprintf(fileID,'%1.4f, %1.4f, %1.4f\n',bvec); 
 end
