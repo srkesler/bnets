@@ -7,7 +7,7 @@ export PATH=$PATH:/Applications/TrackVis.app/Contents/MacOS
 
 SUBJS=$(cat /fullpath/Paths.txt) #txt file containing full path to each subject folder e.g. /Desktop/Study/Subj1
 
-mkdir Montage
+mkdir /fullpath/Montage #path where screenshots will be stored for combining
 
 for subjdir in ${SUBJS}
 do 
