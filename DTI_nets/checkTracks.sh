@@ -17,5 +17,5 @@ do
 	cp -a ${titlestr}trk*.png ../Montage
 done
 
-cd ../Montage
+cd ../Montage #edit if necessary
 gm convert *.png checkDTItrks.pdf 
