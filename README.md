@@ -1,4 +1,4 @@
-Matlab (www.mathworks.com) and Brain Network Toolbox (brain-connectivity-toolbox.net) are required for most. Additional requirements are listed in the comments for each script and some of these are included in the Resources folder.
+Matlab (www.mathworks.com) and Brain Connectivity Toolbox (https://sites.google.com/site/bctnet/) are required for most. Additional requirements are listed in the comments for each script and some of these are included in the Resources folder.
 
 DTI_nets/:	        Scripts for preprocessing and preparing DTI data for connectome analyses 
 
