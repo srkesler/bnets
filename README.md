@@ -12,5 +12,7 @@ TargetedAttack.m    Conduct targeted attack on nodes
 
 rEdge.m             Conduct a random attack analysis on edges
 
+rfClass.R           R statistical package script for conducting random forest classification with connectome (or other) data
+
 Shelli Kesler, PhD, Cognitive Neuroimaging Laboratory, University of Texas MD Anderson Cancer Center
 skesler@mdanderson.org
