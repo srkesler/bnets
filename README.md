@@ -19,5 +19,4 @@ swiAUC/:            Scripts for comparing connectome properties across multiple 
 
 The bNets Toolbox is free to use for non-commercial purposes and comes with no warranty or guarantee.  Use at your own risk.  No technical support is provided.  Please report bugs/errors to:
 
-Shelli Kesler, PhD, Cognitive Neuroimaging Laboratory, University of Texas MD Anderson Cancer Center
-skesler@mdanderson.org
+Shelli Kesler, PhD, srkesler@gmail.com
