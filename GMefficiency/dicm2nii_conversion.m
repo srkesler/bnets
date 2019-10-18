@@ -1,3 +1,6 @@
+% requires Xiangrui Li's dicm2nii scripts in Matlab path
+% http://www.mathworks.com/matlabcentral/fileexchange/42997-dicom-to-nifti-converter
+
 clc
 clear all
 close all
