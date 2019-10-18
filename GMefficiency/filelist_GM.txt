@@ -1,0 +1,10 @@
+/Volumes/wdext/Study/Glioma/Glioma71/s235/anat/m0wrp1anat.nii
+/Volumes/wdext/Study/Glioma/Glioma71/s236/anat/m0wrp1anat.nii
+/Volumes/wdext/Study/Glioma/Glioma71/s237/anat/m0wrp1anat.nii
+/Volumes/wdext/Study/Glioma/Glioma71/s238/anat/m0wrp1anat.nii
+/Volumes/wdext/Study/Glioma/Glioma71/s239/anat/m0wrp1anat.nii
+/Volumes/wdext/Study/Glioma/Glioma71/s240/anat/m0wrp1anat.nii
+/Volumes/wdext/Study/Glioma/Glioma71/s241/anat/m0wrp1anat.nii
+/Volumes/wdext/Study/Glioma/Glioma71/s242/anat/m0wrp1anat.nii
+/Volumes/wdext/Study/Glioma/Glioma71/s243/anat/m0wrp1anat.nii
+/Volumes/wdext/Study/Glioma/Glioma71/s244/anat/m0wrp1anat.nii
