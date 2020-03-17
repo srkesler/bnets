@@ -16,6 +16,10 @@ powerL.R            Determines fit of degree distribution with power law and com
 
 swiAUC/:            Scripts for comparing connectome properties across multiple densities
 
+CPM.R:              R version of Finn et al.'s Connectome-Based Predictive Modeling Matlab scripts
+
+CPM50.R             Same as CPM but with split-half cross validation (50 iterations)
+
 
 The bNets Toolbox is free to use for non-commercial purposes and comes with no warranty or guarantee.  Use at your own risk.  No technical support is provided.  Please report bugs/errors to:
 
