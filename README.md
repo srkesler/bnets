@@ -13,5 +13,4 @@ The bNets Toolbox is free to use for non-commercial purposes and comes with no w
 
 Shelli Kesler, PhD, srkesler@gmail.com
 
-Please cite Hosseini SM, Hoeft F, Kesler SR.  PLoS One 2012;7:e40709 if using GATcmd
 
