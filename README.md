@@ -6,7 +6,7 @@ CPM_R/:       R versions of Finn et al.'s Connectome Predictive Modeling Matlab 
 
 GMefficiency/:  Calculate nodal efficiencies from individual gray matter networks (uses Tijms' similarity based extraction method)
 
-GATcmd/:			Graph Analysis Toolbox command line version
+GATcmd/:			Graph Analysis Toolbox Command Line version
 
 
 The bNets Toolbox is free to use for non-commercial purposes and comes with no warranty or guarantee.  Use at your own risk.  No technical support is provided.  Please report bugs/errors to:
