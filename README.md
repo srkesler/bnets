@@ -1,27 +1,16 @@
-Matlab (www.mathworks.com) and Brain Connectivity Toolbox (https://sites.google.com/site/bctnet/) are required for most. Additional requirements are listed in the comments for each script and some of these are included in the Resources folder.
+Matlab (www.mathworks.com) or GNU Octave (https://www.gnu.org/software/octave/) and Brain Connectivity Toolbox (https://sites.google.com/site/bctnet/) are required for most. Additional requirements are listed in the comments for each script and some of these are included in the Resources folder.
 
-DTI_nets/:	        Scripts for preprocessing and preparing DTI data for connectome analyses 
+DTI_nets/:	  Scripts for preprocessing and preparing DTI data for connectome analyses 
 
-minD.m:             Threshold matrices to minimum connection density (data driven)
+CPM_R/:       R versions of Finn et al.'s Connectome Predictive Modeling Matlab scripts
 
-INC.m:              Extract individual network contribution from group level connectivity matrices
+GMefficiency/:  Calculate nodal efficiencies from individual gray matter networks (uses Tijms' similarity based extraction method)
 
-TargetedAttack.m    Conduct targeted attack on nodes
-
-rEdge.m             Conduct a random attack analysis on edges
-
-powerL.R            Determines fit of degree distribution with power law and compares fit between groups
-
-CPM.R:              R version of Finn et al.'s Connectome-Based Predictive Modeling Matlab scripts
-
-CPM50.R             Same as CPM but with split-half cross validation (50 iterations)
-
-GATcmd/:			Graph Analysis Toolbox command line version
+GATcmd/:			Graph Analysis Toolbox Command Line version
 
 
 The bNets Toolbox is free to use for non-commercial purposes and comes with no warranty or guarantee.  Use at your own risk.  No technical support is provided.  Please report bugs/errors to:
 
 Shelli Kesler, PhD, srkesler@gmail.com
 
-Please cite Hosseini SM, Hoeft F, Kesler SR.  PLoS One 2012;7:e40709 if using GATcmd
 
