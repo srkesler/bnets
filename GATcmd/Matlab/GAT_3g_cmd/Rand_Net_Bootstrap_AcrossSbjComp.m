@@ -50,16 +50,17 @@ N1=data1;N2=data2;
 Sz1=size(data1,1);Sz2=size(data2,1);
 
 data=data1;data(Sz1+1:Sz1+Sz2,:)=data2;
-rng(1001)% Added by Vikram Rao on 08/06/2018 in order to fix the seed and have consistent results
+rng(1001,'twister')% Added by Vikram Rao on 08/06/2018 in order to fix the seed and have consistent results % edited 9/20/21 by 
+%Shelli Kesler to address legacy random number generator override
 RandIndex=randperm(Sz1+Sz2);
 Randata(1:Sz1+Sz2,:)=data(RandIndex(1:Sz1+Sz2),:);
 N_G1=cell(1,Nperm);N_G2=cell(1,Nperm);
 
 for i=1:Nperm
     fprintf('%-4s\n',['generating random network #' num2str(i) '...']);
-    rng(1000+i); % Added by Vikram Rao on 08/06/2018 in order to fix the seed and have consistent results
+    rng(1000+i,'twister'); % Added by Vikram Rao on 08/06/2018 in order to fix the seed and have consistent results
     Samp1=randsample(Sz1+Sz2,Sz1,'true');
-    rng(2000+i); % Added by Vikram Rao on 08/06/2018 in order to fix the seed and have consistent results
+    rng(2000+i,'twister'); % Added by Vikram Rao on 08/06/2018 in order to fix the seed and have consistent results
     Samp2=randsample(Sz1+Sz2,Sz2,'true');
     N_G1{i}=Randata(Samp1,:);
     N_G2{i}=Randata(Samp2,:);
@@ -197,7 +198,7 @@ N2=data2; N3=data3;
 Sz2=size(data2,1); Sz3=size(data3,1);
 
 data=data2;data(Sz2+1:Sz2+Sz3,:)=data3;
-rng(1001) % Added by Vikram Rao on 08/06/2018 in order to fix the seed and have consistent results
+rng(1001,'twister') % Added by Vikram Rao on 08/06/2018 in order to fix the seed and have consistent results
 RandIndex=randperm(Sz2+Sz3);
 Randata(1:Sz2+Sz3,:)=data(RandIndex(1:Sz2+Sz3),:);
 
@@ -205,9 +206,9 @@ N_G2=cell(1,Nperm); N_G3=cell(1,Nperm);
 
 for i=1:Nperm
     fprintf('%-4s\n',['generating random network #' num2str(i) '...']);
-    rng(1000+i); % Added by Vikram Rao on 08/06/2018 in order to fix the seed and have consistent results
+    rng(1000+i,'twister'); % Added by Vikram Rao on 08/06/2018 in order to fix the seed and have consistent results
     Samp2=randsample(Sz2+Sz3,Sz2,'true');
-    rng(2000+i); % Added by Vikram Rao on 08/06/2018 in order to fix the seed and have consistent results
+    rng(2000+i,'twister'); % Added by Vikram Rao on 08/06/2018 in order to fix the seed and have consistent results
     Samp3=randsample(Sz2+Sz3,Sz3,'true');
     N_G2{i}=Randata(Samp2,:);
     N_G3{i}=Randata(Samp3,:);
@@ -346,7 +347,7 @@ N1=data1; N3=data3;
 Sz1=size(data1,1);Sz3=size(data3,1);
 
 data=data1;data(Sz1+1:Sz1+Sz3,:)=data3;
-rng(1001) % Added by Vikram Rao on 08/06/2018 in order to fix the seed and have consistent results
+rng(1001,'twister') % Added by Vikram Rao on 08/06/2018 in order to fix the seed and have consistent results
 RandIndex=randperm(Sz1+Sz3);
 Randata(1:Sz1+Sz3,:)=data(RandIndex(1:Sz1+Sz3),:);
 
@@ -354,9 +355,9 @@ N_G1=cell(1,Nperm); N_G3=cell(1,Nperm);
 
 for i=1:Nperm
     fprintf('%-4s\n',['generating random network #' num2str(i) '...']);
-    rng(1000+i); % Added by Vikram Rao on 08/06/2018 in order to fix the seed and have consistent results
+    rng(1000+i,'twister'); % Added by Vikram Rao on 08/06/2018 in order to fix the seed and have consistent results
     Samp1=randsample(Sz1+Sz3,Sz1,'true');
-    rng(2000+i); % Added by Vikram Rao on 08/06/2018 in order to fix the seed and have consistent results
+    rng(2000+i,'twister'); % Added by Vikram Rao on 08/06/2018 in order to fix the seed and have consistent results
     Samp3=randsample(Sz1+Sz3,Sz3,'true');
     N_G1{i}=Randata(Samp1,:);
     N_G3{i}=Randata(Samp3,:);
